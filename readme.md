@@ -5,3 +5,23 @@ some ready python packages for recommending is going to be tested... like surpri
 
 <h2>surprise package:</h2>
 it's a simple package. ratings sould be in range of (1,4). there is some algorithms like SVD SVD++ in this package. 
+
+
+<h2> Embedding: </h1>
+embeddings is used in many places like embedding users/items or for encoding.
+if Embedding notebook i used it for embedding pokemon types. there was 18 unique of type1 and 19 of type2 attribute.
+this attributes where in string type. first i encoded theme in to integer type with help of sklearn.preprocessing.LabelEncoder .
+then created a simple neural network with tf.keras:
+
+Layer (type)                 Output Shape              Param #   
+=================================================================
+poke_embedding (Embedding)   (None, 1, 3)              54        
+_________________________________________________________________
+flatten (Flatten)            (None, 3)                 0         
+_________________________________________________________________
+relu1 (Dense)                (None, 30)                120       
+_________________________________________________________________
+relu2 (Dense)                (None, 15)                465       
+_________________________________________________________________
+dense_5 (Dense)              (None, 1)                 16        
+=================================================================
