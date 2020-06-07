@@ -13,9 +13,9 @@ if Embedding notebook i used it for embedding pokemon types. there was 18 unique
 this attributes where in string type. first i encoded theme in to integer type with help of sklearn.preprocessing.LabelEncoder .
 then created a simple neural network with tf.keras:
 
-<h3>Layer (type)              input           output</h3>   
-poke_embedding (Embedding)   (1,18)           (1,3) <br>
-flatten (Flatten)                             (None, 3)<br>
-relu1 (Dense)                                 (None, 30)<br>
-relu2 (Dense)                                 (None, 15)<br>
-dense_5 (Dense)                               (None, 1)<br>
+<h3>Layer (type)-------------input----------- output</h3>   
+poke_embedding (Embedding)---(1,18)----------(1,3) <br>
+flatten (Flatten)----------------------------(None, 3)<br>
+relu1 (Dense)--------------------------------(None, 30)<br>
+relu2 (Dense)--------------------------------(None, 15)<br>
+dense_5 (Dense)------------------------------(None, 1)<br>
