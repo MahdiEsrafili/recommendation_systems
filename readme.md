@@ -22,3 +22,8 @@ dense_5 (Dense)------------------------------(None, 1)<br>
 
 and fit the data on this network. the X is type1 or typ2 and the y is Total attribute. after fitting, the embedding values are in embedding_layer so we first get this layer with model.get_layer and get weights from this layer with layer.get_weights.
 the formule for choosing embedding size is min(nuniques/2, 50).
+
+
+there is another type of embedding and it's for encoding users/items with latent attributes. it is used in collaborative filtering and matrix factorization. We have matrix of ratings (for example) and we create a embedding matrix bases on that.
+suppose rating matrix is R(m,n): m users and n items, we can factorize it to U(m,d) I(n,d) that R = U*I' . based on this embedding, we can make recommendations. U and I are embbeding for users and items. 
+matrix factorization could been done with SGD (stochastic gradient descent) or some ready modules in sk-learn or scipy.
