@@ -14,8 +14,8 @@ this attributes where in string type. first i encoded theme in to integer type w
 then created a simple neural network with tf.keras:
 
 <h3>Layer (type)              input           output</h3>   
-poke_embedding (Embedding)   (1,18)           (1,3) 
-flatten (Flatten)                             (None, 3)          
-relu1 (Dense)                                 (None, 30)      
-relu2 (Dense)                                 (None, 15)      
-dense_5 (Dense)                               (None, 1)
+poke_embedding (Embedding)   (1,18)           (1,3) <br>
+flatten (Flatten)                             (None, 3)<br>
+relu1 (Dense)                                 (None, 30)<br>
+relu2 (Dense)                                 (None, 15)<br>
+dense_5 (Dense)                               (None, 1)<br>
