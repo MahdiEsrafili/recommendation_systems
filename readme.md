@@ -19,3 +19,6 @@ flatten (Flatten)----------------------------(None, 3)<br>
 relu1 (Dense)--------------------------------(None, 30)<br>
 relu2 (Dense)--------------------------------(None, 15)<br>
 dense_5 (Dense)------------------------------(None, 1)<br>
+
+and fit the data on this network. the X is type1 or typ2 and the y is Total attribute. after fitting, the embedding values are in embedding_layer so we first get this layer with model.get_layer and get weights from this layer with layer.get_weights.
+the formule for choosing embedding is min(nuniques/2, 50).
